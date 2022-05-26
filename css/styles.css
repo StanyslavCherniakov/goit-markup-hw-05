@@ -209,6 +209,8 @@ header {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero button:focus,
@@ -355,13 +357,17 @@ header {
   width: 44px;
   border-radius: 50%;
   color: #afb1b8;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-social:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
@@ -398,13 +404,16 @@ header {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-comp {
   fill: currentColor;
 }
 
-.client-item .link:hover {
+.client-item .link:hover,
+.client-item .link:focus {
   color: var(--accent-color);
   border: 1px solid #2196f3;
 }
@@ -440,7 +449,10 @@ header {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .adress-list .link:hover,
 .adress-list .link:focus {
   color: var(--accent-color);
@@ -474,9 +486,12 @@ header {
 
 .bottom .social-link {
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }
 /* Портфолио */
